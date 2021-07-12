@@ -1,0 +1,38 @@
+.pending-request {
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.btn-accept-pending {
+	margin-left: 10px;
+}
+
+.btn-pending {
+	margin-bottom: 20px;
+}
+
+.margin-space {
+	margin-top: 15px;
+};
+
+.dot {
+	height:50px;
+	width: 40px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	color : white;
+	font-size: 14px;
+	padding-top: 10px;
+}
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+
+.text {
+	margin-left: 20px;
+}
+

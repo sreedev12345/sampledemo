@@ -1,0 +1,39 @@
+.product {
+	margin-top: 20px;
+	width: 1000px;
+	margin-bottom: 10px;
+}
+
+.approved-request {
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.margin-space {
+	margin-top: 10px;
+}
+
+.dot {
+	height:50px;
+	width: 40px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	color : white;
+	font-size: 14px;
+	padding-top: 10px;
+}
+
+.service {
+	padding-top: 10px;
+}
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+
+.text {
+	margin-left: 10px;
+}

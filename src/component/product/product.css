@@ -1,0 +1,14 @@
+.product {
+	margin-top: 20px;
+	width: 1000px;
+}
+
+.product-content {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.btn-pagination {
+   margin-left: 50%; 
+   margin-top: 10px;
+}

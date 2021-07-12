@@ -1,0 +1,36 @@
+.app-header {
+	background-color: rgb(135, 206, 235);
+	margin-bottom: 20px;
+}
+
+.header-content {
+   padding: 5px 5px 5px 15px;
+   color:white;
+}
+
+.request {
+	padding:10px 0px 10px 10px;
+}
+
+.path-request {
+	padding:10px 0px 10px 10px;
+	text-decoration: underline;
+}
+
+.request-service {
+	text-decoration: underline;
+	padding:10px 10px 10px 10px;
+}
+
+.path-service {
+	padding:10px 10px 10px 15px;
+	text-decoration: underline;
+}
+
+.service {
+	padding:10px 10px 10px 15px;
+}
+
+.payment {
+	padding:10px 10px 10px 10px;
+}
