@@ -1,19 +1,15 @@
-import React,{useEffect,useState} from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React,{useState} from 'react';
+import { useSelector } from 'react-redux';
 import Data,{ accept } from '../common';
 import PendingRequest from '../pendingrequest/PendingRequest';
-import { productListAction } from '../../redux/action/ProductAction'
 import './product.css';
 
 
 
 const Product = ()=>{
-  let dispatch = useDispatch();
   const selector = useSelector(state => state.productlistReducer.payload);
   const [data,setData] = useState([]);
   const [currentPage,setCurrentPage] = useState(1);
-  const [index,setIndex] = useState(0);
-  const [arr,setArr] = useState([])
   const dataPerPage = 5;
   var val = 0
 
@@ -31,14 +27,6 @@ const Product = ()=>{
   
 
 
-  useEffect(()=>{
-     dispatch(productListAction(Data))
-  },[])
-
-
-  useEffect(()=>{
-     setData([...data,...sliceData]);
-  },[selector,currentPage]);
 
 
   const showMore = ()=>{
@@ -60,7 +48,7 @@ const Product = ()=>{
                   return (
                     <div className="row border" key={i}>
                       <div className="col-md-4">
-                        <img className="col-md-12" src={data.imageUrl}/>
+                        <img className="col-md-12" src={data.imageUrl} alt='data'/>
                       </div>
                       <div className="col-md-4">{data.productName}
                         <div>Training and fitness</div>
