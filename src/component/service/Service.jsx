@@ -29,7 +29,7 @@ const Service = ()=>{
               </div>
               <div className="col-md-4">{accept.productName}
                   <div>Training and fitness</div>
-                   <p className="col-md-8">This yogas and pilate training session is designed 
+                   <p className="col-md-8">This yogas and pilates training session is designed 
                        for all levels of trainee....</p>
                     <div className="row">
                        <div className="col-md-6">for one session</div>
