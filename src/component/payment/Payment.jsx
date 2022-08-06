@@ -13,10 +13,7 @@ const Payment = ()=>{
     const data = new Date().getHours()>=12 ? 'am' : 'pm' ;
      const history = useHistory();
 
-     React.useEffect(()=>{
-        dispatch(paymentAction())
-     },[])
-
+  
     const generateInvoice = ()=>{
       dispatch(paymentAction());
       history.push('/order')
@@ -28,7 +25,7 @@ const Payment = ()=>{
           <div className="container-fluid">
             <div className="row border payment-details">
                <div className="col-md-4">
-                <img className="col-md-12" src={payment.imageUrl}/>
+                <img className="col-md-12" src={payment.imageUrl} alt='payment'/>
               </div>
                 <div className="col-md-4">{payment.productName}
                   <div>Training and fitness</div>
@@ -43,7 +40,7 @@ const Payment = ()=>{
             <div className="border approved-payment">
                 <div className="row">
             <div className="col-md-6">
-             <h6 style={{color:"orange"}}></h6>
+             <h6 style={{color:"orange"}}>test</h6>
              <div>{`${new Date().getHours()}:${new Date().getMinutes()} ${data}`} {`${new Date().getDate()}/${new Date().getMonth()}/${new Date().getFullYear()}`}</div>
            </div>
              <div className="col-md-6">
@@ -70,7 +67,7 @@ const Payment = ()=>{
          </div>
           <div className="row">
             <div className="col-md-6">
-              <img  style={{borderRadius : "70%",height: "100px"}} src={payment.imageUrl}/> <span>{payment.productName}</span>
+              <img  style={{borderRadius : "70%",height: "100px"}} src={payment.imageUrl} alt="pro"/> <span>{payment.productName}</span>
              
             </div>
             <div className="col-md-6">

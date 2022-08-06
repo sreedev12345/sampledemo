@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { pendingRequestAction } from '../../redux/action/PendingRequestAction';
 import './pendingrequest.css';
 
@@ -20,7 +20,7 @@ const PendingRequest = ({accept})=>{
         <div className="container-fluid border pending-request">
           <div className="row margin-space">
            <div className="col-md-6">
-             <h6 style={{color:"orange"}}></h6>
+             <h6 style={{color:"orange"}}>test</h6>
              <div>{`${new Date().getHours()}:${new Date().getMinutes()} ${data}`} {`${new Date().getDate()}/${new Date().getMonth()}/${new Date().getFullYear()}`}</div>
            </div>
             <div className="col-md-6">
@@ -46,7 +46,7 @@ const PendingRequest = ({accept})=>{
           </div>
           <div className="row">
             <div className="col-md-6">
-              <img  style={{borderRadius : "70%",height: "100px"}} src={accept.imageUrl}/> <span>{accept.productName}</span>
+              <img  style={{borderRadius : "70%",height: "100px"}} src={accept.imageUrl} alt="pro"/> <span>{accept.productName}</span>
              
             </div>
             <div className="col-md-6">

@@ -25,7 +25,7 @@ const Service = ()=>{
          <div className="container-fluid">
            <div className="row border">
               <div className="col-md-4">
-                <img className="col-md-12" src={accept.imageUrl}/>
+                <img className="col-md-12" src={accept.imageUrl} alt='img'/>
               </div>
               <div className="col-md-4">{accept.productName}
                   <div>Training and fitness</div>
@@ -41,7 +41,7 @@ const Service = ()=>{
         <div className="border approved-request">
             <div className="row">
             <div className="col-md-6">
-             <h6 style={{color:"orange"}}></h6>
+             <h6 style={{color:"orange"}}>test</h6>
              <div>{`${new Date().getHours()}:${new Date().getMinutes()} ${data}`} {`${new Date().getDate()}/${new Date().getMonth()}/${new Date().getFullYear()}`}</div>
            </div>
              <div className="col-md-6">
@@ -67,7 +67,7 @@ const Service = ()=>{
          </div>
          <div className="row">
             <div className="col-md-6">
-              <img  style={{borderRadius : "70%",height: "100px"}} src={accept.imageUrl}/> <span>{accept.productName}</span>
+              <img  style={{borderRadius : "70%",height: "100px"}} src={accept.imageUrl} alt='imh'/> <span>{accept.productName}</span>
              
             </div>
             <div className="col-md-6">
